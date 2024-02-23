@@ -1,0 +1,67 @@
+.profileSection{
+    padding-top: 60px;
+    .infoSection{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 3px solid #ccc;
+            object-fit: cover;
+            transition: all ease-in-out .4s;
+            box-shadow: -1px 2px 10px 3px #000;
+            animation: boxShadow 3s linear infinite alternate;
+        }
+    }
+    .infoDatas{
+        text-align: center;
+        h1{
+            color: #fff;
+            text-shadow: 2px 4px 3px #000
+        }
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        span{
+            border-right: 1px solid #000;
+            height: 20px;
+        }
+        h3{
+            margin: 0 10px;
+            color: #fff;
+            text-shadow: 2px 4px 3px #000
+        }
+    }
+    .resInfo{
+        border: 1px solid #fff;
+        padding: 15px;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 30px 0;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 1px 2px 5px 0px #000;
+        transition: all ease-in-out .4s;
+    }
+    .resInfo:active,
+    .resInfo:focus,
+    .resInfo:hover{
+        color: #000;
+        background-color: red;
+    }
+}
+
+@keyframes boxShadow{
+    0%{
+        transform: translateY(3px) scale(.8);
+    }
+    50% {
+        transform: translateY(-3px) scale(1);
+    }
+    100% {
+        transform: translateY(-3px) scale(1.1);
+    }
+}

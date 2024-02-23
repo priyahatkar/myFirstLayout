@@ -1,0 +1,74 @@
+.navbar{
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    // background-color: #fff !important;
+    .navbar-brand{
+        height: 70px;
+        padding: 0;
+        margin: 0;
+        img{
+            height: 100%;
+            object-fit: cover;
+            transition: all .2s ease-in-out;
+        }
+        img:focus,
+        img:active,
+        img:hover{
+            transform: scale(1.1);
+        }
+    }
+    .social{
+        .brand-icons{
+            display: flex;
+            margin-right: 10px;
+            list-style: none;
+            .socialBrand {
+                padding: .35em 2.375em .375em 0;
+                margin: 0 10px 0 0;
+                .socialBrands {
+                    color: #000;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 500;
+                    transition: all .4s ease-in-out;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .socialBrands:hover,
+                .socialBrands:active,
+                .socialBrands:focus{
+                    color: orangered;
+                    transform: scale(1.5);
+                    text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+                    // text-decoration: underline;
+                }
+                .socialBrands::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: orangered;
+                    transition: width 0.5s ease;
+                }
+                .socialBrands:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (min-width:600px) and (max-width:900px){
+    .navbar{
+        width: 100%;
+    }
+    .gradDetails{
+        flex-basis: 100%;
+    }
+}

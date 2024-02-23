@@ -1,0 +1,19 @@
+
+
+<div class="skillSections">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="skillSection">
+                    <div class="skillSet" *ngFor="let skill of skillsArray">
+                        <h3 class="SkillName">
+                            {{skill.name}}
+                        </h3>
+                        <mat-progress-bar class="progress" mode="determinate" value="{{skill.value}}"></mat-progress-bar>
+                        <span class="skillvalue">{{skill.value}}%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

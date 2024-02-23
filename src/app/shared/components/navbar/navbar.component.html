@@ -1,0 +1,46 @@
+<nav class="mainNav fixed-top navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="home">
+        <img src="./../../../../assets/images/logo.png" alt="logo" title="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{'show': navbarOpen}" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <div class="social my-2 my-lg-0">
+            <ul class="brand-icons mb-0">
+                <li class="socialBrand">
+                    <a class="socialBrands">profile <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="socialBrand">
+                    <a class="socialBrands">skills</a>
+                </li>
+                <li class="socialBrand">
+                    <a href="#" class="socialBrands">education</a>
+                </li>
+                <li class="socialBrand">
+                    <a routerLink="/data" class="socialBrands">experience</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
